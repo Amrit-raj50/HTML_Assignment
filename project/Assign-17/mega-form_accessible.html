@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingGita Survey</title>
+</head>
+<body>
+    <hr>
+    <h1>CodingGita University - Admission + Internet Survey Form</h1>
+    <p>Please fill out this application form completely<br>
+    your admission will be considered along with the <br>
+internet usage survey for reserch purpose.</p><br><br>
+<hr>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <lable for="name">Full Name:</lable>
+            <input type="text" id="name" placeholder="Enter your full name" aria-label="Users name" requried><br>
+            <lable for="father name">Father's Name:</lable>
+            <input type="text" id="father name"  aria-label="Users father name" requried><br>
+            <lable for="mother name">Mother Name:</lable>
+            <input type="text" id="mother name"  aria-label="Users Mother name" requried><br>
+            <lable for="email">Email:</lable>
+            <input type="email" id="email" aria-label="Users Email" requried><br>
+            <lable for="phone no">Phone:</lable>
+            <input type="tel" id="phone no" min="6000000000" max="9999999999" aria-label="" requried><br>
+            <lable for="dob">DOB:</lable>
+            <input type="date" id="dob"  aria-label="Users BAte of Birth" requried><br>
+            <lable for="nationality">Nationality:</lable>
+            <select>
+                <optgroup>
+                    <option>Indian</option>
+                    <option>NRI</option>
+                    <option>Other</option>
+                </optgroup>
+            </select><br>
+            <lable>Upload Photo:</lable>
+            <input type="file" accept=".jpg,.png"><br><br>
+            <hr>
+        </fieldset>
+        <fieldset>
+            <legend>Academics Details</legend>
+            <lable>Highest Qualification:</lable>
+            <select>
+                <optgroup>
+                    <option>10th</option>
+                    <option>11th</option>
+                    <option>12th</option>
+                    <option>Graduate</option>
+                </optgroup>
+            </select><br>
+            <lable>Stream:</lable>
+            <select>
+                <optgroup>
+                    <option>Computer Engineering</option>
+                    <option>Civil Engineering</option>
+                    <option>Mechanical Engineering</option>
+                </optgroup>
+            </select><br>
+            <lable>Percentage/CGPA:</lable>
+            <input required><br>
+            <lable>Year of Passing:</lable>
+            <input requried><br>
+            <lable>Subjects Studied:</lable>
+            <input type="checkbox" name="check1">
+            <lable>Physics</lable>
+            <input type="checkbox" name="check1">
+            <lable>Math</lable>
+            <input type="checkbox" name="check1">
+            <lable>CS</lable>
+            <input type="checkbox" name="check1">
+            <lable>English</lable><br><br>
+
+            <lable>Upload Certificates:</lable>
+            <input type="file" id="files" name="files[]" multiple><br>
+            <lable>Prefered Course:</lable>
+            <select>
+                <optgroup>
+                    <option>MERN</option>
+                    <option>DSA</option>
+                    <option>AI/ML</option>
+                    <option>Web Dev</option>
+                    <option>Cloud</option>
+                </optgroup>
+            </select><br>
+            <lable>Admission Category:</lable>
+            <input type="radio" name="cate">
+            <lable>General</lable>
+            <input typr="radio" name="cate">
+            <lable>SC</lable>
+            <input type="radio" name="cate">
+            <lable>ST</lable>
+            <input type="radio" name="cate">
+            <lable>OBS</lable>
+            <input type="radio" name="cate">
+            <lable>EWS</lable><br><br>
+            <hr>
+        </fieldset>
+        <fieldset>
+            <legend>Internet Usage & Skills</legend>
+            <lable>Internet Access?</lable>
+            <input type="radio" name="asc">
+            <lable>Yes</lable>
+            <input type="radio" name="asc">
+            <lable>No</lable><br>
+            <lable>Devices Used:</lable>
+            <input type="checkbox" name="dev">
+            <lable>Laptop</lable>
+            <input type="checkbox" name="dev">
+            <lable>Mobile</lable>
+            <input type="checkbox" name="dev">
+            <lable>Tablet</lable>
+            <input type="checkbox" name="dev">
+            <lable>Desktop</lable><br>
+            <lable>Avegare Usage:</lable>
+            <select>
+                <optgroup>
+                    <option>More</option>
+                    <option>Less</option>
+                </optgroup>
+            </select><br>
+            <lable>Prefered Study:</lable>
+            <input type="time"><br>
+            <lable>Weekly Data Usage:</lable>
+            <input type="range" min="1" max="100"><br>
+            <lable>Favorite Social Platform:</lable><br>
+            <textarea type="message">Leave  your message here</textarea><br>
+            <lable>Skills:</lable>
+            <input type="checkbox" name="skill">
+            <lable>HTML</lable>
+            <input type="checkbox" name="skill">
+            <lable>CSS</lable>
+            <input type="checkbox" name="skill">
+            <lable>React</lable>
+            <input type="checkbox" name="skill">
+            <lable>Node.js</lable>
+            <input type="checkbox" name="skill">
+            <lable>MongoDB</lable>
+            <input type="checkbox" name="skill">
+            <lable>Git</lable><br>
+            <lable>Upload Speed Platform:</lable>
+            <input type="File"><br>
+            <lable>Favorite Color:</lable>
+            <input type="color"><br>
+            <lable>Internet Satisfaction:</lable>
+            <input type="range" min="1" max="10">
+            <br><br>
+            <hr>
+        </fieldset>
+        <fieldset>
+            <legend>Declaration</legend>
+            <lable>Why join CodingGita?</lable>
+            <br>
+            <textarea type="message" rows="5" cols="10"></textarea><br>
+            <lable>How has Internet Helped your education?</lable>
+            <br>
+            <textarea type="message" > Enter your Ans here......</textarea>
+            <br>
+            <lable>Recommend CodingGita?</lable>
+            <input type="radio" name="ans">
+            <lable>Yes</lable>
+            <input type="radio" name="ans">
+            <lable>No</lable><br>
+            <input type="checkbox" requried>
+            <lable>I hereby declare all information is true.</lable><br>
+            <lable>Upload Signature:</lable>
+            <input type="file">
+            <lable>Date of Submission:</lable>
+            <input type="date"><br><br>
+        </fieldset>
+        <hr>
+        <input type="submit">
+        <input type="reset">
+        <hr>
+    </form>
+</body>
+</html>
